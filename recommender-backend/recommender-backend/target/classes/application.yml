@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: recommender-backend
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: lwfroot
+    url: jdbc:mysql://localhost:3306/recommender_db?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8&allowPublicKeyRetrieval=true
+mybatis:
+  mapper-locations:classpath:mapper/*.xml
+  type-aliases-package:nbu.lwf.recommenderbackend.entity
